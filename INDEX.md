@@ -18,6 +18,8 @@ Complete navigation guide to all project documentation and resources.
 1. **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System architecture deep dive
 2. **[PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)** - Technical summary
 3. **[MULTILINGUAL_SETUP.md](./MULTILINGUAL_SETUP.md)** - Multilingual content management (EN/PT/FR) 🌍
+4. **[ADMIN_CLIENT_PORTAL.md](./ADMIN_CLIENT_PORTAL.md)** - Admin & client portal implementation guide 🏢
+5. **[PORTAL_STATUS.md](./PORTAL_STATUS.md)** - Current portal implementation status 📊
 
 ---
 
