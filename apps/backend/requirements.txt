@@ -1,0 +1,26 @@
+Django==5.0.1
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+djangorestframework-simplejwt==5.3.1
+psycopg2-binary==2.9.9
+python-decouple==3.8
+Pillow==10.2.0
+celery==5.3.6
+redis==5.0.2
+boto3==1.34.11
+storages==1.14.2
+django-fernet-fields==1.0.4
+weasyprint==60.2
+docxtpl==1.1.2
+python-dotenv==1.0.1
+drf-spectacular==0.26.5
+django-ratelimit==4.1.0
+markdown==3.5.1
+django-filter==23.5
+
+# Development
+pytest-django==4.7.0
+pytest-cov==4.1.0
+black==24.1.1
+flake8==7.0.0
+isort==5.13.2

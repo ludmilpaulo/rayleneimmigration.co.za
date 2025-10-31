@@ -1,0 +1,48 @@
+[
+  {
+    "model": "accounts.role",
+    "pk": "admin-role-uuid",
+    "fields": {
+      "code": "ADMIN",
+      "name": "Administrator",
+      "description": "Full system access"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "consultant-role-uuid",
+    "fields": {
+      "code": "CONSULTANT",
+      "name": "Consultant",
+      "description": "Immigration consultant"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "finance-role-uuid",
+    "fields": {
+      "code": "FINANCE",
+      "name": "Finance",
+      "description": "Finance and billing access"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "support-role-uuid",
+    "fields": {
+      "code": "SUPPORT",
+      "name": "Support",
+      "description": "Customer support access"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "client-role-uuid",
+    "fields": {
+      "code": "CLIENT",
+      "name": "Client",
+      "description": "Regular client access"
+    }
+  }
+]
+

@@ -1,0 +1,68 @@
+[
+  {
+    "model": "documents.documenttype",
+    "pk": "doc-type-passport-uuid",
+    "fields": {
+      "code": "PASSPORT",
+      "name": "Passport",
+      "description": "Valid passport with at least 6 months validity",
+      "mime_types": ["application/pdf", "image/jpeg", "image/png"],
+      "is_required": true,
+      "max_size_mb": 5,
+      "is_active": true
+    }
+  },
+  {
+    "model": "documents.documenttype",
+    "pk": "doc-type-medical-uuid",
+    "fields": {
+      "code": "MEDICAL_CERTIFICATE",
+      "name": "Medical Certificate",
+      "description": "Medical certificate from approved panel physician",
+      "mime_types": ["application/pdf"],
+      "is_required": true,
+      "max_size_mb": 5,
+      "is_active": true
+    }
+  },
+  {
+    "model": "documents.documenttype",
+    "pk": "doc-type-police-uuid",
+    "fields": {
+      "code": "POLICE_CLEARANCE",
+      "name": "Police Clearance Certificate",
+      "description": "Police clearance from all countries resided in",
+      "mime_types": ["application/pdf"],
+      "is_required": true,
+      "max_size_mb": 5,
+      "is_active": true
+    }
+  },
+  {
+    "model": "documents.documenttype",
+    "pk": "doc-type-financial-uuid",
+    "fields": {
+      "code": "FINANCIAL_PROOF",
+      "name": "Proof of Financial Means",
+      "description": "Bank statements or financial guarantee",
+      "mime_types": ["application/pdf"],
+      "is_required": true,
+      "max_size_mb": 10,
+      "is_active": true
+    }
+  },
+  {
+    "model": "documents.documenttype",
+    "pk": "doc-type-qualifications-uuid",
+    "fields": {
+      "code": "QUALIFICATIONS",
+      "name": "Educational Qualifications",
+      "description": "Degrees, diplomas, and certificates",
+      "mime_types": ["application/pdf"],
+      "is_required": false,
+      "max_size_mb": 10,
+      "is_active": true
+    }
+  }
+]
+

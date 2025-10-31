@@ -1,0 +1,21 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Raylene Immigration Solutions logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1F4BB8"/>
+      <stop offset="100%" stop-color="#0B1B3B"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield mark -->
+  <g transform="translate(12,8)">
+    <path d="M28 0l24 8v18c0 18-12 28-24 34C16 54 4 44 4 26V8l24-8z" fill="url(#g)"/>
+    <path d="M18 29l8 8 18-18" fill="none" stroke="#C8A85E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#0E7A57" stroke-width="2" opacity="0.35"/>
+  </g>
+  <!-- Wordmark -->
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI" font-weight="600">
+    <text x="90" y="34" font-size="22" fill="#0B1B3B">Raylene</text>
+    <text x="90" y="58" font-size="22" fill="#1F4BB8">Immigration</text>
+    <text x="235" y="58" font-size="18" fill="#C8A85E">Solutions</text>
+  </g>
+</svg>
+

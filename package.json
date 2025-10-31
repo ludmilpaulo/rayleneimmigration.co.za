@@ -1,0 +1,29 @@
+{
+  "name": "raylene-immigration-solutions",
+  "version": "1.0.0",
+  "description": "Full-stack immigration management platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:backend\"",
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:backend": "cd apps/backend && python manage.py runserver",
+    "build": "npm run build:web",
+    "build:web": "cd apps/web && npm run build",
+    "test": "npm run test:web && npm run test:backend",
+    "test:web": "cd apps/web && npm run test",
+    "test:backend": "cd apps/backend && python manage.py test",
+    "lint": "npm run lint:web",
+    "lint:web": "cd apps/web && npm run lint",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "migrate": "cd apps/backend && python manage.py makemigrations && python manage.py migrate"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+

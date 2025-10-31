@@ -1,0 +1,45 @@
+[
+  {
+    "model": "applications.applicationtype",
+    "pk": "app-type-study-uuid",
+    "fields": {
+      "code": "STUDY_VISA",
+      "name": "Study Visa",
+      "slug": "study-visa",
+      "country": "South Africa",
+      "description": "Visa for students pursuing education in South Africa",
+      "base_price": "2500.00",
+      "doc_requirements": ["passport", "acceptance_letter", "financial_proof", "medical_certificate", "police_clearance"],
+      "is_active": true
+    }
+  },
+  {
+    "model": "applications.applicationtype",
+    "pk": "app-type-work-uuid",
+    "fields": {
+      "code": "WORK_VISA",
+      "name": "Work Visa",
+      "slug": "work-visa",
+      "country": "South Africa",
+      "description": "Visa for skilled workers and professionals",
+      "base_price": "3500.00",
+      "doc_requirements": ["passport", "job_offer", "qualifications", "medical_certificate", "police_clearance"],
+      "is_active": true
+    }
+  },
+  {
+    "model": "applications.applicationtype",
+    "pk": "app-type-pr-uuid",
+    "fields": {
+      "code": "PERMANENT_RESIDENCE",
+      "name": "Permanent Residence",
+      "slug": "permanent-residence",
+      "country": "South Africa",
+      "description": "Pathway to permanent residency in South Africa",
+      "base_price": "5000.00",
+      "doc_requirements": ["passport", "temporary_residence", "financial_proof", "medical_certificate", "police_clearance"],
+      "is_active": true
+    }
+  }
+]
+
