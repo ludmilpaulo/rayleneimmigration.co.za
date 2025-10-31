@@ -23,7 +23,14 @@ export default function LoginPage() {
       if (response.data.access) {
         localStorage.setItem('access_token', response.data.access)
       }
-      router.push('/app')
+      // Get user info to determine redirect
+      const userResponse = await authApi.me()
+      const user = userResponse.data
+      // Redirect based on role
+      const isAdmin = user.is_staff || user.user_roles?.some((r: any) => 
+        ['ADMIN', 'CONSULTANT', 'FINANCE', 'SUPPORT'].includes(r.role.code)
+      )
+      router.push(isAdmin ? '/admin' : '/app')
     } catch (err: any) {
       setError(err.response?.data?.detail || 'Login failed')
     } finally {
