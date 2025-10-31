@@ -61,6 +61,26 @@ export function Navigation() {
               Consultation
             </Link>
             <Link
+              href="/about"
+              className={`text-sm font-medium transition ${
+                isActive('/about')
+                  ? 'text-primary-navy border-b-2 border-primary-navy'
+                  : 'text-gray-600 hover:text-primary-navy'
+              }`}
+            >
+              About
+            </Link>
+            <Link
+              href="/contact"
+              className={`text-sm font-medium transition ${
+                isActive('/contact')
+                  ? 'text-primary-navy border-b-2 border-primary-navy'
+                  : 'text-gray-600 hover:text-primary-navy'
+              }`}
+            >
+              Contact
+            </Link>
+            <Link
               href="/login"
               className="text-sm font-medium text-gray-600 hover:text-primary-navy transition"
             >
@@ -116,6 +136,20 @@ export function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Consultation
+              </Link>
+              <Link
+                href="/about"
+                className="text-gray-600 hover:text-primary-navy"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="/contact"
+                className="text-gray-600 hover:text-primary-navy"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
               </Link>
               <Link
                 href="/login"

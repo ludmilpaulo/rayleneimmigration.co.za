@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { applicationsApi } from '@/lib/api'
 
@@ -18,11 +18,7 @@ export default function AdminApplicationsPage() {
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState('all')
 
-  useEffect(() => {
-    fetchApplications()
-  }, [filter])
-
-  const fetchApplications = async () => {
+  const fetchApplications = useCallback(async () => {
     try {
       const params: any = {}
       if (filter !== 'all') {
@@ -35,7 +31,11 @@ export default function AdminApplicationsPage() {
     } finally {
       setLoading(false)
     }
-  }
+  }, [filter])
+
+  useEffect(() => {
+    fetchApplications()
+  }, [fetchApplications])
 
   const getStatusBadgeColor = (status: string) => {
     const colors: Record<string, string> = {
