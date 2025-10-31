@@ -17,6 +17,7 @@ Complete navigation guide to all project documentation and resources.
 
 1. **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System architecture deep dive
 2. **[PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)** - Technical summary
+3. **[MULTILINGUAL_SETUP.md](./MULTILINGUAL_SETUP.md)** - Multilingual content management (EN/PT/FR) 🌍
 
 ---
 
@@ -33,7 +34,7 @@ Complete navigation guide to all project documentation and resources.
 - Bookings: `/api/bookings/` - Scheduling
 - Billing: `/api/billing/` - Invoices & payments
 - Communications: `/api/communications/` - Messages
-- Content: `/api/content/` - Blog
+- Content: `/api/content/` - Blog & Pages (with locale support)
 
 ---
 
