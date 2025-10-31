@@ -23,7 +23,7 @@ export function Footer() {
               Professional immigration services for South Africa. Helping you navigate your visa journey with confidence.
             </p>
             <div className="space-y-2 text-sm">
-              <p>📞 +27 12 345 6789</p>
+              <p>📞 021 023 1389</p>
               <p>📧 info@rayleneimmigration.co.za</p>
             </div>
           </div>

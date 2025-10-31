@@ -97,7 +97,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-primary-navy mb-2">📞 Phone</h3>
                     <p className="text-gray-600">
-                      <a href="tel:+27123456789" className="text-primary-royal hover:underline">+27 12 345 6789</a>
+                      <a href="tel:+27210231389" className="text-primary-royal hover:underline">021 023 1389</a>
                     </p>
                   </div>
                   <div>

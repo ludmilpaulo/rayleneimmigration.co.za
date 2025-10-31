@@ -76,7 +76,7 @@ export default function ConsultationPage() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-navy focus:border-transparent"
-                    placeholder="+27 12 345 6789"
+                    placeholder="021 023 1389"
                   />
                 </div>
 
@@ -140,8 +140,8 @@ export default function ConsultationPage() {
                     <span className="text-2xl">📞</span>
                     <div>
                       <p className="font-semibold text-gray-700">Phone</p>
-                      <a href="tel:+27123456789" className="text-primary-royal hover:underline">
-                        +27 12 345 6789
+                      <a href="tel:+27210231389" className="text-primary-royal hover:underline">
+                        021 023 1389
                       </a>
                     </div>
                   </div>

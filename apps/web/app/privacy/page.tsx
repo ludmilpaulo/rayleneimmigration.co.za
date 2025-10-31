@@ -73,7 +73,7 @@ export default function PrivacyPage() {
               </p>
               <p className="text-gray-600">
                 Email: <a href="mailto:privacy@rayleneimmigration.co.za" className="text-primary-royal hover:underline">privacy@rayleneimmigration.co.za</a><br />
-                Phone: <a href="tel:+27123456789" className="text-primary-royal hover:underline">+27 12 345 6789</a>
+                Phone: <a href="tel:+27210231389" className="text-primary-royal hover:underline">021 023 1389</a>
               </p>
             </section>
 

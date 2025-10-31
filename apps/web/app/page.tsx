@@ -273,7 +273,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="mt-12 text-blue-200">
-              <p className="text-lg">📞 Call us: <a href="tel:+27123456789" className="text-white font-semibold hover:underline">+27 12 345 6789</a></p>
+              <p className="text-lg">📞 Call us: <a href="tel:+27210231389" className="text-white font-semibold hover:underline">021 023 1389</a></p>
               <p className="text-lg">📧 Email: <a href="mailto:info@rayleneimmigration.co.za" className="text-white font-semibold hover:underline">info@rayleneimmigration.co.za</a></p>
             </div>
           </div>
