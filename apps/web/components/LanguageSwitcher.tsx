@@ -1,27 +1,19 @@
 'use client'
 
-import { usePathname, useRouter } from 'next/navigation'
-import { useState } from 'react'
-import { locales } from '@/i18n'
-
-const languageNames: Record<string, string> = {
-  en: 'English',
-  pt: 'Português',
-}
+import { useEffect, useState } from 'react'
+import { locales, localeNames, type Locale } from '@/i18n'
+import { getLocaleClient, setLocale } from '@/lib/i18n'
 
 export function LanguageSwitcher() {
-  const pathname = usePathname()
-  const router = useRouter()
-  const [currentLang, setCurrentLang] = useState(
-    pathname.split('/')[1] || 'en'
-  )
+  const [currentLang, setCurrentLang] = useState<Locale>('en')
 
-  const handleLanguageChange = (locale: string) => {
-    const segments = pathname.split('/')
-    segments[1] = locale
-    const newPath = segments.join('/')
+  useEffect(() => {
+    setCurrentLang(getLocaleClient())
+  }, [])
+
+  const handleLanguageChange = (locale: Locale) => {
+    setLocale(locale)
     setCurrentLang(locale)
-    router.push(newPath)
   }
 
   return (
@@ -36,7 +28,7 @@ export function LanguageSwitcher() {
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          {languageNames[locale]}
+          {localeNames[locale]}
         </button>
       ))}
     </div>

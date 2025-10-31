@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import Image from 'next/image'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export function Navigation() {
   const pathname = usePathname()
@@ -85,6 +86,7 @@ export function Navigation() {
             >
               Login
             </Link>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -156,6 +158,7 @@ export function Navigation() {
               >
                 Login
               </Link>
+              <LanguageSwitcher />
             </div>
           </div>
         )}

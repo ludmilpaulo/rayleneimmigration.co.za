@@ -127,5 +127,9 @@ export const communicationsApi = {
 export const contentApi = {
   blog: (params?: any) => apiClient.get('/content/blog/', { params }),
   blogPost: (slug: string) => apiClient.get(`/content/blog/${slug}/`),
+  // Page content with locale support
+  page: (slug: string, locale: string = 'en') => 
+    apiClient.get(`/content/pages/${slug}/`, { params: { locale } }),
+  pages: () => apiClient.get('/content/pages/'),
 }
 
