@@ -8,7 +8,7 @@ from .views import (
     CustomTokenObtainPairView
 )
 
-app_name = 'accounts'
+# Removed app_name to avoid namespace conflicts when included multiple times
 
 urlpatterns = [
     # Authentication
