@@ -20,6 +20,8 @@ Complete navigation guide to all project documentation and resources.
 3. **[MULTILINGUAL_SETUP.md](./MULTILINGUAL_SETUP.md)** - Multilingual content management (EN/PT/FR) 🌍
 4. **[ADMIN_CLIENT_PORTAL.md](./ADMIN_CLIENT_PORTAL.md)** - Admin & client portal implementation guide 🏢
 5. **[PORTAL_STATUS.md](./PORTAL_STATUS.md)** - Current portal implementation status 📊
+6. **[LOCAL_TESTING_READY.md](./LOCAL_TESTING_READY.md)** - Local testing guide & status ✅
+7. **[AVAILABLE_PAGES.md](./AVAILABLE_PAGES.md)** - List of all working pages 📄
 
 ---
 
