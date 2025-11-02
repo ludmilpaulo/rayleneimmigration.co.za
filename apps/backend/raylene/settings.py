@@ -85,16 +85,27 @@ DATABASE_URL = config(
     default='postgresql://raylene:raylene_dev_password@localhost:5432/raylene_db'
 )
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME', default='raylene_db'),
-        'USER': config('DB_USER', default='raylene'),
-        'PASSWORD': config('DB_PASSWORD', default='raylene_dev_password'),
-        'HOST': config('DB_HOST', default='localhost'),
-        'PORT': config('DB_PORT', default='5432'),
+# Use SQLite for local development if DB_HOST not set or if explicitly requested
+USE_SQLITE = config('USE_SQLITE', default=False, cast=bool)
+
+if USE_SQLITE or DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': config('DB_NAME', default='raylene_db'),
+            'USER': config('DB_USER', default='raylene'),
+            'PASSWORD': config('DB_PASSWORD', default='raylene_dev_password'),
+            'HOST': config('DB_HOST', default='localhost'),
+            'PORT': config('DB_PORT', default='5432'),
+        }
+    }
 
 
 # Password validation
