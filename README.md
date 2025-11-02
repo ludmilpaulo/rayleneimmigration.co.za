@@ -6,6 +6,15 @@ Full-stack immigration management platform built with Next.js 14 and Django 5.
 
 Professional immigration services platform for managing visa applications, client interactions, and business operations in South Africa.
 
+## 🌐 Live Production URLs
+
+- **Frontend**: https://www.rayleneimmigration.co.za/
+- **Backend API**: https://reylene.pythonanywhere.com/
+- **Django Admin**: https://reylene.pythonanywhere.com/admin/
+- **API Docs**: https://reylene.pythonanywhere.com/api/docs/
+
+See **[PRODUCTION_CONFIG.md](./PRODUCTION_CONFIG.md)** for deployment configuration.
+
 ## 🚀 Tech Stack
 
 ### Frontend

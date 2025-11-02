@@ -4,7 +4,7 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'reylene.pythonanywhere.com'],
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
@@ -14,6 +14,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: '**.cloudflare.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'reylene.pythonanywhere.com',
       },
     ],
   },
