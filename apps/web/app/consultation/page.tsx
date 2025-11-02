@@ -158,7 +158,7 @@ export default function ConsultationPage() {
                     <span className="text-2xl">📍</span>
                     <div>
                       <p className="font-semibold text-gray-700">Office</p>
-                      <p className="text-gray-600">Pretoria, South Africa</p>
+                      <p className="text-gray-600">Cape Town, Western Cape, South Africa</p>
                     </div>
                   </div>
                 </div>

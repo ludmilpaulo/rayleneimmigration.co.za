@@ -40,6 +40,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0B1B3B" />
       </head>
       <body className={inter.className}>
+      <Navigation />
         <Providers>{children}</Providers>
       </body>
     </html>

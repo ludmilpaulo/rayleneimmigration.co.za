@@ -89,8 +89,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-primary-navy mb-2">📍 Address</h3>
                     <p className="text-gray-600">
-                      123 Immigration Boulevard<br />
-                      Pretoria, 0001<br />
+                      Cape Town, Western Cape<br />
                       South Africa
                     </p>
                   </div>
