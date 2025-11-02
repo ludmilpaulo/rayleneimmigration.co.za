@@ -26,6 +26,7 @@ class DocumentTypeViewSet(viewsets.ReadOnlyModelViewSet):
 
 class DocumentViewSet(viewsets.ModelViewSet):
     """View set for documents."""
+    queryset = Document.objects.all()  # Required for router basename
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
     filterset_fields = ['status', 'document_type', 'application']

@@ -1,7 +1,7 @@
 [
   {
     "model": "applications.applicationtype",
-    "pk": "app-type-study-uuid",
+    "pk": "b0000000-0000-0000-0000-000000000001",
     "fields": {
       "code": "STUDY_VISA",
       "name": "Study Visa",
@@ -15,7 +15,7 @@
   },
   {
     "model": "applications.applicationtype",
-    "pk": "app-type-work-uuid",
+    "pk": "b0000000-0000-0000-0000-000000000002",
     "fields": {
       "code": "WORK_VISA",
       "name": "Work Visa",
@@ -29,7 +29,7 @@
   },
   {
     "model": "applications.applicationtype",
-    "pk": "app-type-pr-uuid",
+    "pk": "b0000000-0000-0000-0000-000000000003",
     "fields": {
       "code": "PERMANENT_RESIDENCE",
       "name": "Permanent Residence",

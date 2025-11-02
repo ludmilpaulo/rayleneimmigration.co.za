@@ -20,6 +20,7 @@ class AvailabilitySlotViewSet(ReadOnlyModelViewSet):
 
 class BookingViewSet(viewsets.ModelViewSet):
     """View set for bookings."""
+    queryset = Booking.objects.all()  # Required for router basename
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['status', 'staff', 'client']

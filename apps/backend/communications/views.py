@@ -6,6 +6,7 @@ from .serializers import MessageSerializer, NotificationSerializer, TemplateSeri
 
 class MessageViewSet(viewsets.ModelViewSet):
     """View set for messages."""
+    queryset = Message.objects.all()  # Required for router basename
     permission_classes = [permissions.IsAuthenticated]
     
     def get_queryset(self):
@@ -17,6 +18,7 @@ class MessageViewSet(viewsets.ModelViewSet):
 
 class NotificationViewSet(viewsets.ReadOnlyModelViewSet):
     """View set for notifications."""
+    queryset = Notification.objects.all()  # Required for router basename
     permission_classes = [permissions.IsAuthenticated]
     
     def get_queryset(self):

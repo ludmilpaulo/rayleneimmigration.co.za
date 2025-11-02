@@ -28,6 +28,7 @@ class ApplicationTypeViewSet(viewsets.ReadOnlyModelViewSet):
 
 class ApplicationViewSet(viewsets.ModelViewSet):
     """View set for applications."""
+    queryset = Application.objects.all()  # Required for router basename
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['status', 'priority', 'application_type', 'assigned_to']
@@ -123,6 +124,7 @@ class ApplicationViewSet(viewsets.ModelViewSet):
 
 class TaskViewSet(viewsets.ModelViewSet):
     """View set for tasks."""
+    queryset = Task.objects.all()  # Required for router basename
     serializer_class = TaskSerializer
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]

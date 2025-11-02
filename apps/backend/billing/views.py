@@ -6,6 +6,7 @@ from .serializers import InvoiceSerializer, PaymentSerializer
 
 class InvoiceViewSet(viewsets.ReadOnlyModelViewSet):
     """View set for invoices."""
+    queryset = Invoice.objects.all()  # Required for router basename
     permission_classes = [permissions.IsAuthenticated]
     
     def get_queryset(self):

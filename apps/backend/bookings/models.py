@@ -28,22 +28,22 @@ class AvailabilitySlot(models.Model):
 class Booking(models.Model):
     """Consultation bookings."""
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    client = models.ForeignKey(User, on_delete=models.CASCADE, related_name='bookings')
-    staff = models.ForeignKey(User, on_delete=models.CASCADE, related_name='bookings')
+    client = models.ForeignKey(User, on_delete=models.CASCADE, related_name='client_bookings')
+    staff = models.ForeignKey(User, on_delete=models.CASCADE, related_name='staff_bookings')
     slot = models.ForeignKey(AvailabilitySlot, on_delete=models.CASCADE, related_name='bookings')
     meeting_url = models.URLField(blank=True)
     status = models.CharField(max_length=20, choices=[
-        ('PENDING', 'Pending'),
+        ('SCHEDULED', 'Scheduled'),
         ('CONFIRMED', 'Confirmed'),
         ('CANCELLED', 'Cancelled'),
         ('COMPLETED', 'Completed'),
-    ], default='PENDING')
+    ], default='SCHEDULED')
     notes = models.TextField(blank=True)
     created_at = models.DateTimeField(default=timezone.now)
 
     class Meta:
         db_table = 'bookings'
-        ordering = ['start']
+        ordering = ['-created_at']
 
     def __str__(self):
         return f'{self.client.email} - {self.staff.email}'

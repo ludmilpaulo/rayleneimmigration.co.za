@@ -1,7 +1,7 @@
 [
   {
     "model": "documents.documenttype",
-    "pk": "doc-type-passport-uuid",
+    "pk": "c0000000-0000-0000-0000-000000000001",
     "fields": {
       "code": "PASSPORT",
       "name": "Passport",
@@ -14,7 +14,7 @@
   },
   {
     "model": "documents.documenttype",
-    "pk": "doc-type-medical-uuid",
+    "pk": "c0000000-0000-0000-0000-000000000002",
     "fields": {
       "code": "MEDICAL_CERTIFICATE",
       "name": "Medical Certificate",
@@ -27,7 +27,7 @@
   },
   {
     "model": "documents.documenttype",
-    "pk": "doc-type-police-uuid",
+    "pk": "c0000000-0000-0000-0000-000000000003",
     "fields": {
       "code": "POLICE_CLEARANCE",
       "name": "Police Clearance Certificate",
@@ -40,7 +40,7 @@
   },
   {
     "model": "documents.documenttype",
-    "pk": "doc-type-financial-uuid",
+    "pk": "c0000000-0000-0000-0000-000000000004",
     "fields": {
       "code": "FINANCIAL_PROOF",
       "name": "Proof of Financial Means",
@@ -53,7 +53,7 @@
   },
   {
     "model": "documents.documenttype",
-    "pk": "doc-type-qualifications-uuid",
+    "pk": "c0000000-0000-0000-0000-000000000005",
     "fields": {
       "code": "QUALIFICATIONS",
       "name": "Educational Qualifications",

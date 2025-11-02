@@ -1,7 +1,7 @@
 [
   {
     "model": "accounts.role",
-    "pk": "admin-role-uuid",
+    "pk": "a0000000-0000-0000-0000-000000000001",
     "fields": {
       "code": "ADMIN",
       "name": "Administrator",
@@ -10,7 +10,7 @@
   },
   {
     "model": "accounts.role",
-    "pk": "consultant-role-uuid",
+    "pk": "a0000000-0000-0000-0000-000000000002",
     "fields": {
       "code": "CONSULTANT",
       "name": "Consultant",
@@ -19,7 +19,7 @@
   },
   {
     "model": "accounts.role",
-    "pk": "finance-role-uuid",
+    "pk": "a0000000-0000-0000-0000-000000000003",
     "fields": {
       "code": "FINANCE",
       "name": "Finance",
@@ -28,7 +28,7 @@
   },
   {
     "model": "accounts.role",
-    "pk": "support-role-uuid",
+    "pk": "a0000000-0000-0000-0000-000000000004",
     "fields": {
       "code": "SUPPORT",
       "name": "Support",
@@ -37,7 +37,7 @@
   },
   {
     "model": "accounts.role",
-    "pk": "client-role-uuid",
+    "pk": "a0000000-0000-0000-0000-000000000005",
     "fields": {
       "code": "CLIENT",
       "name": "Client",
